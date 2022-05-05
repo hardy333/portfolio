@@ -8,10 +8,20 @@
     
 }
 
+body.dark .skills-title-main{
+    color: #fff;
+}
+
 .skills-content-container{
     padding-top: 20px;
 
 }
+
+body.dark .skills-title{
+    color: #fff;
+}
+
+
 .skills-title{
     font-size: 16px;
 }
@@ -29,6 +39,10 @@
     font-weight: 400;
     color: rgb(80, 78, 112);
 
+}
+
+body.dark .skill{
+    color: #fff;
 }
 
 
