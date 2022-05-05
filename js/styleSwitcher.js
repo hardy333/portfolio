@@ -1,54 +1,8 @@
+const switcher = document.querySelector(".dark-theme-switcher-checkbox");
 
-const links = document.querySelectorAll(".alternate-style"),
-	totalLinks = links.length;
+console.log(switcher);
 
-
-function setActiveStyle(color) {
-	for (let i = 0; i < totalLinks; i++) {
-		if (color === links[i].getAttribute("title")) {
-			links[i].removeAttribute("disabled");
-		}
-		else {
-			links[i].setAttribute("disabled", "true");
-		}
-	}
-
-}
-
-//  Dark/Light mode switcher 
-// body-skin is checkbox class name . 
-
-const bodySkin = document.querySelectorAll(".body-skin"),
-	totalBodySkin = bodySkin.length;
-for (let i = 0; i < totalBodySkin; i++) {
-	bodySkin[i].addEventListener("change", function () {
-		if (this.value === "dark") {
-			document.body.className = "dark";
-		}
-		else {
-			document.body.className = "";
-		}
-	})
-}
-
-
-// Add later, to start from dark mode . 
-for (let i = 0; i < totalBodySkin; i++) {
-
-	if (bodySkin[i].value === "dark") {
-		document.body.className = "dark";
-	}
-	else {
-		document.body.className = "";
-	}
-}
-
-
-
-document.querySelector(".toggle-style-switcher").addEventListener("click", () => {
-	document.querySelector(".style-switcher").classList.toggle("open");
-})
-
-
-
-
+switcher.addEventListener("input", () => {
+  document.body.classList.toggle("dark");
+  console.log(212);
+});
