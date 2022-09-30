@@ -695,6 +695,7 @@ padding-bottom:0px;
  flex:0 0 33.33%;
  max-width: 33.33%;
  margin-bottom: 30px;
+ min-height: 200px;
 }
 .portfolio .portfolio-item.hide{
 	display: none;
@@ -733,6 +734,11 @@ padding-bottom:0px;
 	overflow: hidden;
 	cursor: pointer;
 	position: relative;
+}
+
+.portfolio .portfolio-item-inner img{
+	min-height: 200px;
+
 }
 .portfolio .portfolio-item-inner .portfolio-img img{
 	width: 100%;
